@@ -11,7 +11,17 @@ Feature: Fight or Flight (Natural Language, tutorial02)
     When attacked by a samurai
     Then the ninja should engage the opponent
 
+  Scenario: Weaker opponent 2
+    Given the ninja has a third level black-belt
+    When attacked by Jackie Chan
+    Then the ninja should engage the opponent
+
   Scenario: Stronger opponent
     Given the ninja has a third level black-belt
     When attacked by Chuck Norris
+    Then the ninja should run for his life
+
+  Scenario: Stronger opponent 2
+    Given the ninja has a yellow-belt
+    When attacked by a samurai
     Then the ninja should run for his life
